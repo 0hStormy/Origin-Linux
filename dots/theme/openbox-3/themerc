@@ -32,6 +32,8 @@ window.active.title.bg: flat
 window.active.title.bg.color: #000000
 window.inactive.title.bg: flat
 window.inactive.title.bg.color: #000000
+window.active.buttons.left:
+window.active.buttons.right: minimize,maximize,close
 
 !! titlebar text
 window.label.text.justify: center
@@ -43,14 +45,17 @@ window.inactive.label.text.color: #bbbbbb
 !! window buttons
 window.*.button.*.bg: parentrelative
 window.active.button.*.hover.bg: flat
-window.inactive.button.*.hover.bg: parentrelative
 window.*.button.*.pressed.bg: flat
+window.inactive.button.*.bg: flat
+window.inactive.button.*.bg.color: #222222
 
 window.active.button.*.hover.bg.color: #151515
 window.active.button.*.hover.image.color: #ffffff
 window.active.button.*.pressed.bg.color: #151515
+window.active.button.*.bg: flat
+window.active.button.*.bg.color: #333333
 
-window.active.button.*.image.color: #cccccc
+window.active.button.*.image.color: #ffffff
 window.active.button.disabled.image.color: #bbbbbb
 window.inactive.button.*.image.color: #bbbbbb
 window.inactive.button.disabled.image.color: #bbbbbb
