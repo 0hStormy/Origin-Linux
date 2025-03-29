@@ -24,7 +24,10 @@ mv -f dots/theme /home/origin/.themes/theme
 mkdir -p /home/origin/.config
 mv -f dots/labwc /home/origin/.config/labwc
 
-echo "cage -d -- chromium --new-window --start-fullscreen --app=https://origin.mistium.com &" >> /home/origin/.bashrc
+mv -f startup.sh ../startup.sh
+mv -f linker.py ../linker.py
+
+echo "sh startup.sh" >> /home/origin/.bashrc
 echo "python3 linker.py" >> /home/origin/.bashrc
 echo "echo Welcome to the Origin Linux developer terminal! Please keep in mind a couple of things:" >> /home/origin/.bashrc
 echo "echo 1. We do not provide support if you use this" >> /home/origin/.bashrc
