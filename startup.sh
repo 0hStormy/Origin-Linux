@@ -10,7 +10,7 @@ if ! ping -c 1 "google.com"; then
     --text="Origin Linux could not connect to the internet automatically, please set up a network connection by clicking Continue." \
     --title="Network Error" \
     --ok-label="Continue"
-    foot nmtui
+    foot nm-connection-editor
     foot sh
 else
     if [ "$devmode" = true ]; then
