@@ -7,7 +7,7 @@ sudo touch /etc/apt/sources.list
 sudo echo "deb https://deb.debian.org/debian unstable main" > /etc/apt/sources.list
 
 sudo apt update && sudo apt upgrade -y
-sudo apt install labwc chromium foot wget python3-flask python3-flask-cors python3-requests python3-websockets zenity st nm-connetion-editor -y
+sudo apt install labwc chromium foot wget python3-flask python3-flask-cors python3-requests python3-websockets zenity st nm-connection-editor -y
 
 mkdir /etc/systemd/system/getty@tty1.service.d/
 echo "[Service]
