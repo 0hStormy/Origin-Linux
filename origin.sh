@@ -12,7 +12,7 @@ sudo apt install labwc chromium foot wget python3-flask python3-flask-cors pytho
 mkdir /etc/systemd/system/getty@tty1.service.d/
 echo "[Service]
 ExecStart=
-ExecStart=-/usr/bin/agetty --autologin origin --noclear %I $TERM" >/etc/systemd/system/getty@tty1.service.d/override.conf
+ExecStart=-/sbin/agetty --autologin origin --noclear %I $TERM" >/etc/systemd/system/getty@tty1.service.d/override.conf
 sudo systemctl enable getty@tty1
 
 rm ~/linker.py
