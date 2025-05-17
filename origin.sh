@@ -1,7 +1,3 @@
-# Add origin user
-sudo useradd -m origin
-sudo usermod --password origin origin
-
 sudo rm -rf /etc/apt/sources.list
 sudo touch /etc/apt/sources.list
 sudo echo "deb https://deb.debian.org/debian unstable main" > /etc/apt/sources.list
@@ -27,7 +23,7 @@ mv -f dots/labwc /home/origin/.config/labwc
 mv -f startup.sh ../startup.sh
 mv -f linker.py ../linker.py
 
-echo "sh startup.sh" >> /home/origin/.bashrc
+echo "labwc -s 'sh startup.sh'" >> /home/origin/.bashrc
 echo "python3 linker.py" >> /home/origin/.bashrc
 echo "echo Welcome to the Origin Linux developer terminal! Please keep in mind a couple of things:" >> /home/origin/.bashrc
 echo "echo 1. We do not provide support if you use this" >> /home/origin/.bashrc

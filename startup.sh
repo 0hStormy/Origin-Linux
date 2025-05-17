@@ -3,6 +3,8 @@ devmode=true
 
 export GTK_THEME=theme
 
+sleep 2
+
 if ! ping -c 1 "google.com"; then
     swaybg -c '#444444' >/dev/null 2>&1 &
     zenity \
@@ -17,7 +19,7 @@ else
         foot sh &
     fi
     flask --app linker run &
-    chromium-browser --new-window --app=https://origin.mistium.com
+    chromium --new-window --app=https://origin.mistium.com
 fi
 
 export GTK_THEME=$currentgtk
